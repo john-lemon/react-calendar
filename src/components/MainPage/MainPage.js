@@ -5,18 +5,25 @@ import Calendar from 'components/Calendar/Calendar';
 
 
 class MainPage extends React.Component {
-    constructor (props) {
-        super(props);
-    }
+  constructor (props) {
+    super(props);
+    this.state={};
+  }
 
-    render () {
-      return <div className="b-main-page">
-        <Calendar 
-            selectedMonthIndex = { new Date().getMonth() }
-            selectedYear = { new Date().getFullYear() }
-            selectedDay = { new Date().getDate() }/>
-      </div>
-    }
+
+  render () {
+    return <div className="main-page">
+      <Calendar
+        ref="calendar"
+        selectedMonthIndex = { new Date().getMonth() }
+        selectedYear = { new Date().getFullYear() }
+        selectedDay = { new Date().getDate() }
+        onSetMonth = { ()=>{ this.setState({value:this.refs.calendar.value }) } }
+        onSetDay = { ()=>{ this.setState({value:this.refs.calendar.value }) } }
+        onSetYear = { ()=>{ this.setState({value:this.refs.calendar.value }) } }/>
+      <div className="calendar-value">{this.state.value ? this.state.value : null}</div>
+    </div>
+  }
 
 }
 
