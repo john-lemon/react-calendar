@@ -50,11 +50,6 @@ module.exports = {
     plugins: [
         new ExtractTextPlugin('app.css'),
 
-        new webpack.ProvidePlugin({
-            Promise: 'imports?this=>global!exports?global.Promise!es6-promise',
-            fetch: 'imports?this=>global!exports?global.fetch!whatwg-fetch',
-        }),
-
         new webpack.NoErrorsPlugin(),
 
         new webpack.DefinePlugin({
@@ -64,7 +59,7 @@ module.exports = {
 
     devServer: {
         host: 'localhost',
-        port: 8080
+        port: 3000
     }
 };
 
