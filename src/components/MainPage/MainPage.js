@@ -1,13 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-import Calendar from 'components/Calendar/Calendar';
+import Calendar from 'components/Calendar/Calendar'
 
+import 'MainPage.styl'
 
 class MainPage extends React.Component {
   constructor (props) {
-    super(props);
-    this.state={};
+    super(props)
+    this.state={}
   }
 
 
@@ -21,10 +22,10 @@ class MainPage extends React.Component {
         onSetMonth = { ()=>{ this.setState({value:this.refs.calendar.value }) } }
         onSetDay = { ()=>{ this.setState({value:this.refs.calendar.value }) } }
         onSetYear = { ()=>{ this.setState({value:this.refs.calendar.value }) } }/>
-      <div className="calendar-value">{this.state.value ? this.state.value : null}</div>
+      <div className="calendar-value">{this.state.value ? this.state.value : 'Выберите дату'}</div>
     </div>
   }
 
 }
 
-export default MainPage;
+export default MainPage

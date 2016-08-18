@@ -1,0 +1,105 @@
+.dropdown-menu {
+  display: none;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+}
+.dropdown-menu_opened {
+  display: block;
+}
+.dropdown-menu__list {
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0px 5px;
+  border-bottom: 1px solid #fff;
+  background-color: #4267ae;
+  font-size: 11px;
+}
+.dropdown-menu__item {
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  line-height: 26px;
+  white-space: nowrap;
+  border-top: 1px solid #e9ebee;
+  color: #fff;
+  cursor: pointer;
+}
+.dropdown-menu__item:first-of-type {
+  border-top: none;
+}
+.dropdown-menu__close {
+  position: absolute;
+  top: -11px;
+  right: 0px;
+  cursor: pointer;
+  font-size: 16px;
+  transform: rotate(45deg);
+}
+.calendar {
+  width: 280px;
+  font-size: 14px;
+  border: 1px solid #333;
+  margin: 0 auto 30px;
+  background: #e9ebee;
+}
+.calendar__selector {
+  border-bottom: 1px solid #365899;
+  background: #4267ae;
+  color: #fff;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+}
+.calendar__select {
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+}
+.calendar__select padding 10px 0:first-of-type {
+  margin-right: -1px;
+  border-right: 1px solid #333;
+}
+.calendar__select__daynames {
+  border-bottom: 1px solid #333;
+}
+.calendar__cell {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  vertical-align: middle;
+  color: #365899;
+}
+.calendar__cell_active {
+  background: #4267ae;
+  color: #fff;
+}
+.calendar__days .b-calendar__cell {
+  cursor: pointer;
+}
+.calendar__days__dropdown {
+  left: 18px;
+}
+.calendar-value {
+  text-align: center;
+  font-size: 24px;
+  color: #365899;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, sans-serif;
+}
+.app {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYXBwLmNzcyIsInNvdXJjZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OzsiLCJzb3VyY2VSb290IjoiIn0=*/
