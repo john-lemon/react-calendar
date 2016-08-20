@@ -34,11 +34,17 @@ class Calendar extends React.Component {
     return <div className="calendar">
       <div className="calendar__selector">
         <div className="calendar__select calendar__select_month">
-          <span className="calendar__selected calendar__selected_month" onClick={this._onOpenMonthsList.bind(this)}>{this.state.selectedMonth}</span>
+          <span className="calendar__selected calendar__selected_month" onClick={this._onOpenMonthsList.bind(this)}>
+            {this.state.selectedMonth}
+            <span className="calendar__arrow">&#9660;</span>
+          </span>
           <DropdownMenu ref="monthList" options={monthListOptions}/>
         </div>
         <div className="calendar__select calendar__select_year">
-          <span className="calendar__selected calendar__selected_year" onClick={this._onOpenYearsList.bind(this)}>{this.state.selectedYear}</span>
+          <span className="calendar__selected calendar__selected_year" onClick={this._onOpenYearsList.bind(this)}>
+            {this.state.selectedYear}
+            <span className="calendar__arrow">&#9660;</span>
+          </span>
           <DropdownMenu ref="yearsList" options={yearsListOptions}/>
         </div>
       </div>

@@ -53,20 +53,25 @@
   color: #fff;
   height: 40px;
   line-height: 40px;
-  font-size: 20px;
+  font-size: 18px;
 }
 .calendar__select {
+  width: 50%;
   position: relative;
   display: inline-block;
-  width: 50%;
   text-align: center;
+  cursor: pointer;
 }
-.calendar__select cursor pointer:first-of-type {
+.calendar__select:first-of-type {
   margin-right: -1px;
-  border-right: 1px solid #333;
+  border-right: 1px solid #fff;
 }
-.calendar__select__daynames {
-  border-bottom: 1px solid #333;
+.calendar__daynames {
+  border-bottom: 1px solid #365899;
+}
+.calendar__arrow {
+  font-size: 10px;
+  margin-left: 8px;
 }
 .calendar__cell {
   display: inline-block;
@@ -102,4 +107,4 @@ body {
   margin: 0 auto;
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYXBwLmNzcyIsInNvdXJjZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OzsiLCJzb3VyY2VSb290IjoiIn0=*/
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYXBwLmNzcyIsInNvdXJjZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OyIsInNvdXJjZVJvb3QiOiIifQ==*/
