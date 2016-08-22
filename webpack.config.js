@@ -49,7 +49,7 @@ module.exports = {
     },
 
     postcss: function () {
-        return [autoprefixer({ browsers: ["last 2 version", 'Safari 8'] })]
+        return [autoprefixer({ browsers: ["last 2 version", "Safari 8"] })]
     },
 
     plugins: [
