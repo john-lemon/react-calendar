@@ -3,16 +3,17 @@
 const path = require('path');
 const NODE_ENV = process.env.NODE_ENV || 'development';
 const webpack = require('webpack');
+const autoprefixer = require('autoprefixer');
 
 let ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
     context: __dirname + '/src',
-    entry: './app',
+    entry: './app/app',
     output: {
         path: __dirname + '/bundle',
         publicPath: '/',
-        filename: '/app/app.js'
+        filename: 'app.js'
     },
 
     resolve: {
@@ -41,10 +42,14 @@ module.exports = {
             }, {
                 test: /\.styl$/,
                 exlude: /node_modules/,
-                loader: ExtractTextPlugin.extract('style-loader', 'css-loader!stylus-loader')
+                loader: ExtractTextPlugin.extract('style-loader', 'css-loader!postcss-loader!stylus-loader')
             }
         ]
 
+    },
+
+    postcss: function () {
+        return [autoprefixer({ browsers: ["last 2 version", 'Safari 8'] })]
     },
 
     plugins: [

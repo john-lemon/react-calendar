@@ -22,7 +22,9 @@
     "stylus": "^0.54.5",
     "stylus-loader": "^2.3.1",
     "webpack": "^1.12.14",
-    "webpack-dev-server": "^1.14.1"
+    "webpack-dev-server": "^1.14.1",
+    "autoprefixer": "^6.4.0",
+    "postcss-loader": "^0.10.1"
   },
   "scripts": {
     "build": "./node_modules/.bin/webpack",
